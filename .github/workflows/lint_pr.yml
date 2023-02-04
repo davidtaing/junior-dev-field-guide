@@ -6,7 +6,8 @@ jobs:
   lint_and_comment_on_pr:
     runs-on: ubuntu-22.04
     permissions:
-      pull-requests: write
+      pull-requests: read
+      checks: write
     steps:
       - name: Checkout PR Branch
         uses: actions/checkout@v3.3.0

@@ -13,6 +13,10 @@ jobs:
         uses: actions/setup-node@v3.6.0
         with:
           node-version: '18'
+          
+      - uses: pnpm/action-setup@v2
+        with:  
+          version: 7.26.3
       
       - name: Install NPM Deps
         run: pnpm i --frozen-lockfile

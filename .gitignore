@@ -8,7 +8,7 @@ dist/
 node_modules/
 
 # lint results for CI
-eslint-report.json
+lint_results/eslint-report.json
 
 # logs
 npm-debug.log*

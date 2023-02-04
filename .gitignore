@@ -7,6 +7,9 @@ dist/
 # dependencies
 node_modules/
 
+# lint results for CI
+eslint-report.json
+
 # logs
 npm-debug.log*
 yarn-debug.log*

@@ -7,6 +7,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "lint": "eslint .",
+    "lint:report": "eslint . --format json > eslint-report.json",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"

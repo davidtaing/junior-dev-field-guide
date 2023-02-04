@@ -7,6 +7,7 @@ jobs:
     runs-on: ubuntu-22.04
     permissions:
       pull-requests: write
+      statuses: write
     steps:
       - name: Checkout PR Branch
         uses: actions/checkout@v3.3.0

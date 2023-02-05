@@ -1,6 +1,9 @@
 module.exports = {
   root: true,
   ignorePatterns: [".eslintrc.cjs", "tailwind.config.cjs", "node_modules/"],
+  env: {
+    jest: true,
+  },
   extends: "eslint:recommended",
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -14,6 +17,6 @@ module.exports = {
       parserOptions: {
         parser: "@typescript-eslint/parser",
       },
-    }
-  ]
+    },
+  ],
 };

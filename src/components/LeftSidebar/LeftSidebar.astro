@@ -1,0 +1,34 @@
+---
+import { SIDEBAR } from "../../config";
+import { getSidebarItems } from "./utils";
+
+const sidebarItems = getSidebarItems(SIDEBAR);
+---
+
+<aside class="prose prose-sm dark:prose-invert max-w-none overflow-auto">
+  <ul class="list-none p-0">
+    {
+      sidebarItems.map(([header, children]) => {
+        return (
+          <li class="p-0">
+            <h3 class="mt-0">{header}</h3>
+            <ul class="p-0">
+              {children.map((child) => {
+                return (
+                  <li class="list-none p-0">
+                    <a
+                      class="no-underline text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-50"
+                      href={child.link}
+                    >
+                      {child.text}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </li>
+        );
+      })
+    }
+  </ul>
+</aside>

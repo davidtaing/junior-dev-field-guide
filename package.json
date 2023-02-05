@@ -8,6 +8,7 @@
     "start": "astro dev",
     "lint": "eslint .",
     "lint:report": "eslint . --format json --output-file ./lint_results/eslint-report.json",
+    "prettier": "prettier --write --plugin-search-dir=. .",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
@@ -25,6 +26,9 @@
     "eslint": "^8.33.0",
     "eslint-plugin-astro": "^0.23.0",
     "jest": "^29.4.1",
+    "prettier": "^2.8.3",
+    "prettier-plugin-astro": "^0.8.0",
+    "prettier-plugin-tailwindcss": "^0.2.2",
     "ts-jest": "^29.0.5",
     "typescript": "^4.9.5"
   }

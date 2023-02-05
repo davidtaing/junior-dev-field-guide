@@ -5,7 +5,7 @@ import { getSidebarItems } from "./utils";
 const sidebarItems = getSidebarItems(SIDEBAR);
 ---
 
-<aside class="prose prose-sm dark:prose-invert max-w-none overflow-auto">
+<aside class="prose prose-sm max-w-none overflow-auto dark:prose-invert">
   <ul class="list-none p-0">
     {
       sidebarItems.map(([header, children]) => {
@@ -17,7 +17,7 @@ const sidebarItems = getSidebarItems(SIDEBAR);
                 return (
                   <li class="list-none p-0">
                     <a
-                      class="no-underline text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-50"
+                      class="text-gray-700 no-underline hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-50"
                       href={child.link}
                     >
                       {child.text}

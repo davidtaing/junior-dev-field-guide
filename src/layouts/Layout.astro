@@ -18,7 +18,7 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="dark:bg-gray-900">
-    <div class="grid grid-cols-[240px_auto] mx-auto w-[calc(240px+65ch)]">
+    <div class="grid md:grid-cols-[240px_auto] mx-auto md:w-[calc(240px+65ch)]">
       <LeftSidebar />
       <div class="prose dark:prose-invert">
         <slot />
